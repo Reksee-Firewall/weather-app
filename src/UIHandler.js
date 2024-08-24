@@ -1,16 +1,17 @@
 class UIHandler {
-  constructor(pageState, giphyService) {
+  constructor(pageState, { giphyService, weatherService }) {
     this.pageState = pageState;
     this.giphyService = giphyService;
+    this.weatherService = weatherService;
     this.initializeEventListeners();
   }
 
   initializeEventListeners() {
-    const btn = document.querySelector("button");
-    btn.addEventListener("click", () => this.handleSearch());
+    // const gifBtn = document.querySelector("button");
+    // gifBtn.addEventListener("click", () => this.handleGifSearch());
   }
 
-  handleSearch() {
+  handleGifSearch() {
     const input = document.querySelector("input");
     if (input.value) {
       this.pageState.gifSearchParameter = input.value;

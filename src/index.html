@@ -6,12 +6,195 @@
   <title>Weather App</title>
 </head>
 <body>
-  <figure>
-    <aside>
-      <input>
-      <button>Search</button>
-    </aside>
-    <img src="#">
-  </figure>
+  <div id="view">
+    <header>
+      <div id="searchbar">
+        <input placeholder="Los Angeles, CA, USA">
+        <img id="searchIcon" src="./assets/images/magnifying-glass.png">
+      </div>
+    </header>
+    <main>
+      <div id="left-panel">
+        <div id="left-upper-panel">
+          <aside>
+            <p id="curLoc">Current Location</p>
+            <h2>Los Angeles, CA, USA</h2>
+          </aside>
+          <figure>
+            <img id="city-template" src="./assets/images/city-template.jpg">
+            <section>
+              <img class="tempIcon" src="./assets/images/sunny.png">
+              <div>
+                <p class="max">32°C</p>
+                <p class="min">21ºC</p>
+              </div>
+              <div id="moreInfo">
+                <p class="dayOfWeek">Monday,&nbsp;<span>07:43 AM</span>
+                </p>
+                <p class="weatherState">Sunny</p>
+              </div>
+            </section>
+            <aside>
+              <img src="./assets/images/add.png">
+              <p>Add City</p>
+            </aside>
+          </figure>
+        </div>
+        <div id="left-lower-panel">
+          <h2>Today's Highlights</h2>
+          <ul id="highlights">
+            <li>
+              <p class="li-head">Precipitation</p>
+              <p class="li-info">2%</p>
+            </li>
+            <li>
+              <p class="li-head">Humidity</p>
+              <p class="li-info">87%</p>
+            </li>
+            <li>
+              <p class="li-head">Wind Speed</p>
+              <p class="li-info">0 km/h</p>
+            </li>
+            <li class="larger">
+              <p class="li-head">Sunrise & Sunset</p>
+              <div>
+                <p class="li-info">05:36</p>
+                <p class="li-info">17:28</p>
+              </div>
+            </li>
+          </ul>
+          <h2>Hourly</h2>
+          <ul id="hourly">
+            <button id="left-btn" class="hourly-btn">&lt</button>
+            <li>
+              <p class="li-head">Now</p>
+              <div class="li-info">
+                <img src="./assets/images/cloudy.png">
+                <p>16°C</p>
+              </div>
+            </li>
+            <li>
+              <p class="li-head">12</p>
+              <div class="li-info">
+                <img src="./assets/images/cloudy.png">
+                <p>16°C</p>
+              </div>
+            </li>
+            <li>
+              <p class="li-head">13</p>
+              <div class="li-info">
+                <img src="./assets/images/cloudy.png">
+                <p>16°C</p>
+              </div>
+            </li>
+            <li>
+              <p class="li-head">14</p>
+              <div class="li-info">
+                <img src="./assets/images/cloudy.png">
+                <p>16°C</p>
+              </div>
+            </li>
+            <button id="right-btn" class="hourly-btn">></button>
+          </ul>
+        </div>
+      </div> 
+      <div id="right-panel">
+        <div id="right-upper-panel">
+          <h2>Details</h2>
+          <section>
+            <div class="more-info">
+              <h2>Feels like</h2>
+              <p>42°C</p>
+            </div>
+            <div class="more-info">
+              <h2>Chance of Rain</h2>
+              <p>100%</p>
+            </div>
+            <div class="more-info">
+              <h2>Visibility</h2>
+              <p>100 km</p>
+            </div>
+          </section>
+          <section>
+            <div class="more-info">
+              <h2>UV Index</h2>
+              <p>2.22</p>
+            </div>
+            <div class="more-info">
+              <h2>Pressure</h2>
+              <p>1003 hPa</p>
+            </div>
+          </section>
+        </div>
+        <div id="right-lower-panel">
+          <h2 id="forecast-head">7 Days Forecast</h2>
+          <section id="fore-1" class="odd">
+            <div class="forecast-item">
+              <div class="minmax">
+                <img src="./assets/images/up-arrow.png">
+                <h2>10°C</h2>
+                <img src="./assets/images/down-arrow.png">
+                <h2>-6°C</h2>
+              </div>
+              <aside>
+                <img src="./assets/images/snowy.png">
+                <div>
+                  <h2>Tuesday</h2>
+                  <p>Snowy</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+          <section id="fore-2" class="even">
+            <div class="forecast-item">
+              <aside>
+                <img src="./assets/images/sunny.png">
+                <div>
+                  <h2>Tuesday</h2>
+                  <p>Sunny</p>
+                </div>
+              </aside>
+              <div class="minmax">
+                <img src="./assets/images/up-arrow.png">
+                <h2>32°C</h2>
+                <img src="./assets/images/down-arrow.png">
+                <h2>21°C</h2>
+              </div>
+            </div>
+          </section>
+          <section id="fore-3" class="odd">
+            <div class="forecast-item">
+              <div class="minmax">
+                <img src="./assets/images/up-arrow.png">
+                <h2>26°C</h2>
+                <img src="./assets/images/down-arrow.png">
+                <h2>11°C</h2>
+              </div>
+              <aside>
+                <img src="./assets/images/cloudy.png">
+                <div>
+                  <h2>Tuesday</h2>
+                  <p>Cloudy</p>
+                </div>
+              </aside>
+            </div>
+          </section>
+          <div id="page-n">
+            <img src="./assets/images/filled-period.png">
+            <img src="./assets/images/period.png">
+            <img src="./assets/images/period.png">
+          </div>
+        </div>
+      </div>    
+    </main>
+    <footer>
+      <h3>
+        <b>Copyright © 2024 Reksee-Firewall</b>
+      </h3>
+      <a href="https://github.com/Reksee-Firewall" target="_blank">
+        <img src="./assets/images/github-mark-white.png"/>
+      </a>
+    </footer>
+  </div>
 </body>
 </html>
